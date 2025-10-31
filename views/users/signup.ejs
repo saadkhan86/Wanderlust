@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+    <h2 class="col-6 offset-4 mt-2 text-success">Signup on wanderlust</h2>      
+    <div class="col-6 offset-3">
+        <form action="/signup" class="needs-validation" method="post" novalidate>
+                <div class="mb-4">
+                    <label for="username" class="mt-4 form-label">username</label>
+                    <input  id="username" class="form-control" type="text" placeholder="username" required name="username">
+                    <div class="valid-feedback">
+                        username looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        username field required!
+                    </div>
+                </div>
+
+                <!-- <br /><br /> -->
+                
+                <div class="mb-4"> 
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" type="text" class="form-control" name="email" required placeholder="email" />
+                    <div class="valid-feedback">
+                        Email looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Email field required!
+                    </div>
+                </div>
+                <div class="mb-3 position-relative">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" class="form-control" required minlength="8">
+                        <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                        <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div id="passwordHelp" class="form-text">
+                        Use 8+ chars with mix of letters, numbers & symbols.
+                    </div>
+                    </div>
+
+                    <div class="progress mb-2" style="height: 6px;">
+                    <div id="strengthBar" class="progress-bar"></div>
+                </div>
+                <div id="strengthText" class="small"></div>
+                
+                <div class="mb-4 add-btn2">
+                    <button class="btn btn-success mt-2">Signup</button>
+                </div>
+            </form>
+    </div>
+</div>
