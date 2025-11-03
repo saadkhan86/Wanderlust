@@ -43,7 +43,7 @@ Cloudinary (optional)	Image hosting and management
 Follow these steps to run the project locally:
 
 # 1. Clone this repository
-git clone https://github.com/your-username/Wanderlust.git
+git clone https://github.com/saadkhan86/Wanderlust.git
 
 # 2. Navigate to the project folder
 cd Wanderlust
